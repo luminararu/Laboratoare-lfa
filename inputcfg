@@ -1,0 +1,16 @@
+#
+#
+Sigma :
+0
+1
+End
+States :
+A S
+B
+End
+#
+#
+Rules :
+A 1A0
+A 01
+End
