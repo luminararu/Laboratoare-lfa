@@ -1,16 +1,17 @@
-#
+# Acest CFG genereaza sirurile de forma 11101000 1010( cele care incep cu un sir de 1 si au in mijlocul lor 10 si se termina cu un sir de 0 uri
 # Sigma reprezinta alfabetul string ului citit
 Sigma :
 0
 1
 End
 # 
-States :
+Variables :
 A S
 B
 End
 #
-#
+# in sectiunea rules se expliciteaza modul in care se genearea stringurile( variabila A poate fi in inlocuita cu 1A0 sau 01 si tot asa)
+# A --> 1A0 --> 11A00 -->111A000 -->11101000
 Rules :
 A 1A0
 A 01
