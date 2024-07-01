@@ -1,3 +1,5 @@
+
+# parser ul imparte sectiunile din input file si returneaza un dictionar cu toate
 def load_file(filename):
     d={}
     f = open(filename, 'r')
