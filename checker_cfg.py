@@ -3,6 +3,9 @@ import parser
 parsat = parser.load_file('inputcfg')
 
 states = []
+# se verifica daca parsarea s-a efectuat cu succes si se extrag variabilele( aici au nume de states) verificandu-se existenta starii de inceput 
+
+ok= False
 if parsat == {}:
     print("nu contine nimic")
 else:
@@ -11,6 +14,7 @@ else:
         if 'S' in elem:
             elem=elem.split()
             elem=elem[0]
+            ok=True
         new_states.append(elem)
     parsat["States"] = new_states
     states = set(parsat["States"])
@@ -19,7 +23,7 @@ else:
     print("States:", states)
     print("Sigma:", sigma)
 
-    ok = True
+    # se verifica daca regulile sunt bine definte ( fiecare variabila se afla in variables si fiecare litera se afla in Sigma)
     for rul in parsat["Rules"]:
         rul = rul.strip().split()
         if len(rul) != 2:
