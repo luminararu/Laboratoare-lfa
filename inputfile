@@ -1,12 +1,12 @@
 #
-# comment lines (skip them)
+# Sigma reprezinta alfabetul din care sunt compuse string urile 
 #
 Sigma :
 0
 1
 End
 #
-# comment lines (skip them)
+# States reprezinta nodurile din automata( S- este starea de inceput, iar F reprezinta starile care fac parte din multimea de stari de final)
 #
 States :
 q1, S
@@ -15,7 +15,7 @@ q3
 q4, F
 End
 #
-# comment lines (skip them)
+# tranzitiile tuplul( q', a, q'') unde q' si q'' apartin de multimea states iar a apartine de sigma, care descrie functia delta
 #
 Transitions :
 q1, 1, q1
