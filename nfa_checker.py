@@ -3,7 +3,7 @@ parsat=parser.load_file('inputfile')
 
 
 states=[]
-
+# se verifica parser s-a efectuat cu succes si se verifica daca exista o singura stare de start( variabila cnt retine aparitiile) si cel putin una de final
 if parsat=={}:
     print("nu contine nimic")
 else:
@@ -38,6 +38,7 @@ else:
         print("nu contine nimic")
     print(states)
     print(s)
+    # se verifica daca tranzitiile contin stari din state si litere aferenta alfabetului
     for tranz in parsat['Transitions']:
         elem=tranz.split(', ')
         print(elem)
