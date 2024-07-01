@@ -1,9 +1,10 @@
 #
-#
+# Sigma reprezinta alfabetul string ului citit
 Sigma :
 0
 1
 End
+# 
 States :
 A S
 B
